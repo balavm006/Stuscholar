@@ -1,0 +1,49 @@
+{
+  "demo@tn.gov": [
+    {
+      "ref_id": "REF-20260909-7RWM",
+      "group_id": "20260909065423",
+      "scheme_id": "free_education",
+      "scheme_name": "Free Education Scheme (Tuition Waiver)",
+      "benefit_value": 15000,
+      "status": "Submitted",
+      "applied_at": "2026-09-09T06:54:23+00:00",
+      "details": {
+        "guardian_name": "Saminathan P",
+        "college_name": "Anna University, Chennai",
+        "account_number": "98765432101",
+        "ifsc": "SBIN0001234"
+      }
+    },
+    {
+      "ref_id": "REF-20260909-CHPC",
+      "group_id": "20260909065423",
+      "scheme_id": "central_sector",
+      "scheme_name": "Central Sector Scholarship (Top 20%)",
+      "benefit_value": 12000,
+      "status": "Submitted",
+      "applied_at": "2026-09-09T06:54:23+00:00",
+      "details": {
+        "guardian_name": "Saminathan P",
+        "college_name": "Anna University, Chennai",
+        "account_number": "98765432101",
+        "ifsc": "SBIN0001234"
+      }
+    },
+    {
+      "ref_id": "REF-20260909-4WJY",
+      "group_id": "20260909065423",
+      "scheme_id": "college_hostel_subsidy",
+      "scheme_name": "College Hostel Subsidy",
+      "benefit_value": 7000,
+      "status": "Submitted",
+      "applied_at": "2026-09-09T06:54:23+00:00",
+      "details": {
+        "guardian_name": "Saminathan P",
+        "college_name": "Anna University, Chennai",
+        "account_number": "98765432101",
+        "ifsc": "SBIN0001234"
+      }
+    }
+  ]
+}

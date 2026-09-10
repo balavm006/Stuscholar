@@ -1,0 +1,215 @@
+{
+  "schemes": [
+    {
+      "scheme_id": "post_matric_sc",
+      "scheme_name": "Post-Matric Scholarship (SC)",
+      "category": "community",
+      "benefit_value": 5000,
+      "benefit_desc": "₹5,000/year — tuition + maintenance for SC post-matric students",
+      "eligibility": {
+        "max_income": 250000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["sc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate", "professional"],
+        "conditions": [
+          { "key": "min_score_50", "label": "Scored minimum 50% in the qualifying examination" }
+        ]
+      },
+      "conflicts_with": ["post_matric_st", "adi_dravida", "central_sector"]
+    },
+    {
+      "scheme_id": "post_matric_st",
+      "scheme_name": "Post-Matric Scholarship (ST)",
+      "category": "community",
+      "benefit_value": 5000,
+      "benefit_desc": "₹5,000/year — tuition + maintenance for ST post-matric students",
+      "eligibility": {
+        "max_income": 250000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["st"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate", "professional"],
+        "conditions": [
+          { "key": "min_score_50", "label": "Scored minimum 50% in the qualifying examination" }
+        ]
+      },
+      "conflicts_with": ["post_matric_sc", "adi_dravida", "central_sector"]
+    },
+    {
+      "scheme_id": "adi_dravida",
+      "scheme_name": "Adi Dravida Educational Assistance",
+      "category": "community",
+      "benefit_value": 5500,
+      "benefit_desc": "₹5,500/year — DPI scholarship for Adi Dravidar (SC) students",
+      "eligibility": {
+        "max_income": 200000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["sc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate"],
+        "conditions": []
+      },
+      "conflicts_with": ["post_matric_sc", "post_matric_st", "central_sector"]
+    },
+    {
+      "scheme_id": "first_graduate",
+      "scheme_name": "First Graduate Scheme",
+      "category": "education_status",
+      "benefit_value": 3000,
+      "benefit_desc": "₹3,000/year — for the first graduate in the family (parents never graduated)",
+      "eligibility": {
+        "max_income": 400000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["undergraduate", "postgraduate", "professional"],
+        "conditions": [
+          { "key": "first_graduate", "label": "First graduate in family (no parent/guardian is a graduate)" }
+        ]
+      },
+      "conflicts_with": ["moovalur_rr", "free_education", "central_sector"]
+    },
+    {
+      "scheme_id": "moovalur_rr",
+      "scheme_name": "Moovalur Ramamirtham Ammaiyar Higher Education Assurance",
+      "category": "gender",
+      "benefit_value": 4000,
+      "benefit_desc": "₹4,000/year — given to girls from low-income families pursuing higher education",
+      "eligibility": {
+        "max_income": 200000,
+        "genders": ["female"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st", "minority", "oc"],
+        "min_disability_pct": 0,
+        "age_min": 16,
+        "age_max": 25,
+        "course_types": ["undergraduate", "postgraduate", "professional"],
+        "conditions": []
+      },
+      "conflicts_with": ["free_education", "first_graduate", "central_sector"]
+    },
+    {
+      "scheme_id": "disability_scholarship",
+      "scheme_name": "Differently-Abled Scholarship",
+      "category": "disability",
+      "benefit_value": 6000,
+      "benefit_desc": "₹6,000/year — higher education support for differently-abled students",
+      "eligibility": {
+        "max_income": 200000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st", "minority", "oc"],
+        "min_disability_pct": 40,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate", "professional"],
+        "conditions": []
+      },
+      "conflicts_with": ["central_sector"]
+    },
+    {
+      "scheme_id": "minority_welfare",
+      "scheme_name": "Minority Welfare Scholarship",
+      "category": "community",
+      "benefit_value": 4500,
+      "benefit_desc": "₹4,500/year — for minority-community students (Muslim, Christian, Sikh, Jains, etc.)",
+      "eligibility": {
+        "max_income": 200000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["minority"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate", "professional"],
+        "conditions": []
+      },
+      "conflicts_with": ["bcmbc_scholarship", "central_sector"]
+    },
+    {
+      "scheme_id": "bcmbc_scholarship",
+      "scheme_name": "BC/MBC Welfare Scholarship",
+      "category": "community",
+      "benefit_value": 3500,
+      "benefit_desc": "₹3,500/year — for Backward Class / Most Backward Class students",
+      "eligibility": {
+        "max_income": 200000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["diploma", "undergraduate", "postgraduate"],
+        "conditions": []
+      },
+      "conflicts_with": ["minority_welfare", "central_sector"]
+    },
+    {
+      "scheme_id": "free_education",
+      "scheme_name": "Free Education Scheme (Tuition Waiver)",
+      "category": "income",
+      "benefit_value": 15000,
+      "benefit_desc": "₹15,000/year — full tuition waiver in government colleges",
+      "eligibility": {
+        "max_income": 100000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st", "minority", "oc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["undergraduate", "postgraduate"],
+        "conditions": [
+          { "key": "govt_seat", "label": "Admitted through a government seat in a government/aided college" }
+        ]
+      },
+      "conflicts_with": ["first_graduate", "moovalur_rr"]
+    },
+    {
+      "scheme_id": "central_sector",
+      "scheme_name": "Central Sector Scholarship (Top 20%)",
+      "category": "merit",
+      "benefit_value": 12000,
+      "benefit_desc": "₹12,000/year — for scholars scoring top 20% in the qualifying board exam",
+      "eligibility": {
+        "max_income": 800000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st", "minority", "oc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["undergraduate", "postgraduate", "professional"],
+        "conditions": [
+          { "key": "merit_top_20", "label": "Scored within top 20 percentile of the qualifying Board exam" }
+        ]
+      },
+      "conflicts_with": ["post_matric_sc", "post_matric_st", "adi_dravida", "first_graduate", "moovalur_rr", "minority_welfare", "bcmbc_scholarship", "disability_scholarship"]
+    },
+    {
+      "scheme_id": "college_hostel_subsidy",
+      "scheme_name": "College Hostel Subsidy",
+      "category": "housing",
+      "benefit_value": 7000,
+      "benefit_desc": "₹7,000/year — hostel fee subsidy for rural students pursuing UG/PG",
+      "eligibility": {
+        "max_income": 250000,
+        "genders": ["male", "female", "trans"],
+        "communities": ["bc", "mbc", "dnc", "sc", "st", "minority", "oc"],
+        "min_disability_pct": 0,
+        "age_min": 0,
+        "age_max": 999,
+        "course_types": ["undergraduate", "postgraduate"],
+        "conditions": [
+          { "key": "hostel", "label": "Residing in a recognized hostel" },
+          { "key": "rural", "label": "Home address in a rural/mofussil area" }
+        ]
+      },
+      "conflicts_with": []
+    }
+  ]
+}
